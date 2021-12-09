@@ -59,7 +59,7 @@
                             <button type="submit" class="btn btn-outline-primary btn-block">確認</button>
                         </div>
                         <div class="col-5">
-                            <button type="button" class="btn btn-outline-secondary btn-block" onclick="history.back();">戻る</button>
+                            <button type="button" class="btn btn-outline-secondary btn-block" onclick="location.href='/'">戻る</button>
                         </div>
 
                         </div>
