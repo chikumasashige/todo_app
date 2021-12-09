@@ -1,0 +1,18 @@
+
+.text{
+    text-align: center;
+    font-weight: lighter;
+}
+.col-7{
+    max-width: 80%;
+    margin: 10% auto;
+    
+}
+.col-md{
+    max-width: 80%;
+    margin: 10% auto;
+}
+#top{
+    padding-top: 10px;
+    text-align: center;
+}

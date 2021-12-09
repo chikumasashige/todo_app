@@ -1,0 +1,16 @@
+
+.text{
+    text-align: center;
+    font-weight: lighter;
+}
+.col-7{
+    max-width: 80%;
+    margin: 10% auto;
+    
+}
+
+.alert{
+    color: rgb(255, 0, 64);
+    padding:0;
+    margin: 0;
+}
