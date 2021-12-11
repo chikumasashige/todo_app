@@ -7,6 +7,7 @@ use App\Http\Requests\LoginFormRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use App\Models\Folder;
 use App\Models\User;
 
 class AuthController extends Controller
@@ -38,7 +39,12 @@ class AuthController extends Controller
 
      public function user(){
          $users = User::all();
-         return view('main.home', ['users' => $users]);
+         $folders = Folder::all();
+         
+         return view('main.home', [
+             'users' => $users,
+             'folders' => $folders,
+            ]);
      }
 
 

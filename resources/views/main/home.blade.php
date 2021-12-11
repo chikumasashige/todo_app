@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -8,46 +7,55 @@
     <script src="{{asset('/js/app.js')}}" defer></script>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
     <link href="{{ asset('/css/reset.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/login/login.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/home/home.css') }}" rel="stylesheet">
     <title>ホーム画面</title>
 </head>
 <body>
+  <main>
+    <!-- タスク一覧画面 -->
     <div class="container">
-        <div class="mt-5">
-            @if(session('login_success'))
-              <div class="alert alert-success">
-                  {{ session('login_success')}}
-              </div>
-            @endif
-            @if(session('del_msg'))
-              <div class="alert alert-success">
-                  {{ session('del_msg')}}
-              </div>
-            @endif
-            <h3>プロフィール</h3>
-            <ul>
-                <li>名前：{{Auth::user()->name}}</li>
-                <li>メールアドレス：{{Auth::user()->email}}</li>
-            </ul>
-        </div>
-        <div class="box">
+        @if(session('login_success'))
+          <div class="alert alert-success">
+              {{ session('login_success')}}
+          </div>
+        @endif
+        @if(session('del_msg'))
+          <div class="alert alert-success">
+              {{ session('del_msg')}}
+          </div>
+        @endif
+      <div class="row">
+       <div class="col col-md-4">
+        <nav class="panel panel-default">
+          <div class="panel-heading">フォルダ</div>
+           <div class="panel-body">
+            <a href="#" class="btn btn-default btn-block">
+              フォルダを追加する
+            </a>
+           </div>
+           <div class="list-group">
+            @foreach($folders as $folder)
+              <a href="" class="list-group-item">
+                {{ $folder->title }}
+              </a>
+            @endforeach
+           </div>
+        </nav>
+       </div>
+       <div class="column col-md-8">
+        <!-- ここにタスクが表示される -->
+       </div>
+      </div>
+      <div class="mt-5">
+          <h3>プロフィール</h3>
+          <ul>
+              <li>名前：{{Auth::user()->name}}</li>
+              <li>メールアドレス：{{Auth::user()->email}}</li>
+          </ul>
+      </div>
+      <div class="box">
         @foreach($users as $user)
             <ul id="profile">
                 <li>{{$user->id}}</li>
@@ -57,8 +65,9 @@
                 <a href="home/{{$user->id}}" class="">削除</a>
             </ul>
         @endforeach
-        </div>
+      </div>
     </div>
+  </main>
     
 </body>
 </html>

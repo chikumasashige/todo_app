@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Resist\ResistController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\Task\TaskController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -43,9 +44,17 @@ Route::get('/',[AuthController::class, 'showLogin'])->name('showLogin');
 Route::post('/',[AuthController::class, 'login'])->name('login');
 
 
+
+//ホーム画面ーーーーーーーーーーーーーーーーーーーーー
+
 //会員一覧取得
 Route::get('home',[AuthController::class, 'user'])->name('user');
 Route::get('home/{id}',[UserController::class, 'deleteDate'])->name('delteDate');
+
+// //タスク一覧取得
+// Route::get('home',[TaskController::class, 'folder'])->name('folder');
+
+
 
 // 詳細ページ
 Route::get('/home/detail/{id}',[UserController::class, 'showDetail'])->name('showDetail');
