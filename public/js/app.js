@@ -2079,6 +2079,57 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -37567,17 +37618,109 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container-fluid bg-dark mb-3" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("nav", { staticClass: "navbar navbar-dark" }, [
-          _c("span", { staticClass: "navbar-brand mb-0 h1" }, [
-            _vm._v("Vue Laravel SPA"),
+    return _c("div", { staticClass: "container" }, [
+      _c("table", { staticClass: "table table-hover" }, [
+        _c("thead", { staticClass: "thead-light" }, [
+          _c("tr", [
+            _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
+            _vm._v(" "),
+            _c("th", { attrs: { scope: "col" } }, [_vm._v("Title")]),
+            _vm._v(" "),
+            _c("th", { attrs: { scope: "col" } }, [_vm._v("Content")]),
+            _vm._v(" "),
+            _c("th", { attrs: { scope: "col" } }, [_vm._v("Person In Charge")]),
+            _vm._v(" "),
+            _c("th", { attrs: { scope: "col" } }, [_vm._v("Show")]),
+            _vm._v(" "),
+            _c("th", { attrs: { scope: "col" } }, [_vm._v("Edit")]),
+            _vm._v(" "),
+            _c("th", { attrs: { scope: "col" } }, [_vm._v("Delete")]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("tbody", [
+          _c("tr", [
+            _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+            _vm._v(" "),
+            _c("td", [_vm._v("Title1")]),
+            _vm._v(" "),
+            _c("td", [_vm._v("Content1")]),
+            _vm._v(" "),
+            _c("td", [_vm._v("Ichiro")]),
+            _vm._v(" "),
+            _c("td", [
+              _c("button", { staticClass: "btn btn-primary" }, [
+                _vm._v("Show"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("td", [
+              _c("button", { staticClass: "btn btn-success" }, [
+                _vm._v("Edit"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("td", [
+              _c("button", { staticClass: "btn btn-danger" }, [
+                _vm._v("Delete"),
+              ]),
+            ]),
           ]),
           _vm._v(" "),
-          _c("div", [
-            _c("button", { staticClass: "btn btn-success" }, [_vm._v("List")]),
+          _c("tr", [
+            _c("th", { attrs: { scope: "row" } }, [_vm._v("2")]),
             _vm._v(" "),
-            _c("button", { staticClass: "btn btn-success" }, [_vm._v("ADD")]),
+            _c("td", [_vm._v("Title2")]),
+            _vm._v(" "),
+            _c("td", [_vm._v("Content2")]),
+            _vm._v(" "),
+            _c("td", [_vm._v("Jiro")]),
+            _vm._v(" "),
+            _c("td", [
+              _c("button", { staticClass: "btn btn-primary" }, [
+                _vm._v("Show"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("td", [
+              _c("button", { staticClass: "btn btn-success" }, [
+                _vm._v("Edit"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("td", [
+              _c("button", { staticClass: "btn btn-danger" }, [
+                _vm._v("Delete"),
+              ]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("tr", [
+            _c("th", { attrs: { scope: "row" } }, [_vm._v("3")]),
+            _vm._v(" "),
+            _c("td", [_vm._v("Title3")]),
+            _vm._v(" "),
+            _c("td", [_vm._v("Content3")]),
+            _vm._v(" "),
+            _c("td", [_vm._v("Saburo")]),
+            _vm._v(" "),
+            _c("td", [
+              _c("button", { staticClass: "btn btn-primary" }, [
+                _vm._v("Show"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("td", [
+              _c("button", { staticClass: "btn btn-success" }, [
+                _vm._v("Edit"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("td", [
+              _c("button", { staticClass: "btn btn-danger" }, [
+                _vm._v("Delete"),
+              ]),
+            ]),
           ]),
         ]),
       ]),
