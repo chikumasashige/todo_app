@@ -70,8 +70,11 @@
     <div id="app">
 
             <example-component></example-component>
+<<<<<<< HEAD
 
             
+=======
+>>>>>>> feature/dep
         </div>
   </main>
   <script src="{{ mix('js/app.js') }}"></script>
