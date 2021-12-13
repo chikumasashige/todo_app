@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="{{asset('/js/app.js')}}" defer></script>
+    <meta name="csrf-token" content="{{ csrf_token() }}"> 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ asset('/css/reset.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/home/home.css') }}" rel="stylesheet">
     <title>ホーム画面</title>
 </head>
@@ -67,7 +67,11 @@
         @endforeach
       </div>
     </div>
+    <div id="app">
+            <header-component></header-component>
+            <example-component></example-component>
+        </div>
   </main>
-    
+  <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
